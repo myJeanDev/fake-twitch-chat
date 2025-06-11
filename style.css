@@ -1,0 +1,157 @@
+body,
+html {
+    font-family: 'IBM Plex Mono', monospace;
+    width: 100%;
+    height: 100%;
+    color: #d1d0c6;
+    background: #323437;
+}
+
+h1 {
+    text-align: center;
+}
+
+.centerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#chatWindow {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 5px;
+    margin: 1rem;
+    border-radius: 10px;
+    overflow: visible;
+}
+
+.textBoxContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.profilePicture {
+    color: #dbb941;
+}
+
+.textCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #2c2e31;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.textBox {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.typingWindowBackground {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #2c2e31;
+    border-radius: 10px;
+    width: 150px;
+    height: 75px;
+    padding: 10px;
+}
+
+#typingWindow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 0;
+}
+
+.key {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background: #646669;
+    transition: .5s ease;
+}
+
+.row {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#start {
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background: #dbb941;
+    border: none;
+    z-index: 10;
+}
+
+.fadeOut {
+    animation: fadeOut 3s ease;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+.speed-control {
+    margin: 20px 0;
+    padding: 15px;
+    background: #2c2e31;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.speed-control label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #d1d0c6;
+    font-size: 14px;
+}
+
+.speed-slider {
+    width: 300px;
+    height: 6px;
+    border-radius: 3px;
+    background: #646669;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    /* Filter to change blue to yellow */
+    filter: sepia(1) saturate(10) hue-rotate(0deg) brightness(1.7);
+}
+
+.speed-slider:hover {
+    opacity: 1;
+}
+
+.speed-value {
+    margin-top: 8px;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #d1d0c6;
+    font-size: 12px;
+}
